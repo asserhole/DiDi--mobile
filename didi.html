@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>滴滴巴士</title>
+	<style>
+		body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,form,input,select,legend,fieldset,textarea,th,td{margin: 0;padding: 0;}
+		body{
+			color: #333;
+			font-family: "微软雅黑";
+		}
+		.header{
+			width:7.5rem;
+			height:5.4rem;
+			background-image: url(img/5.png);
+			background-size:100%;
+		}
+		.main-wrap{
+			background: #efeff3;
+			width: 100%;
+			padding: 0.28rem 0;
+		}
+		.main{
+			width:7.1rem;
+			height:30.24rem;
+			background: white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.tag{
+			width:2.4rem;
+			height:0.48rem;
+			border-radius: 0 .2rem .2rem 0;
+			background: #F98919;
+			color: #fff;
+			line-height: 0.48rem;
+			text-indent: 0.5rem;
+			font-size: 0.27rem;
+			margin-top: 0.2rem;
+		}
+		body .section:last-child{
+			border-bottom: 0;
+		}
+		.section{
+			width:6.47rem;
+			margin:0 auto;
+			padding-top: .3rem;
+			padding-bottom: .34rem;
+			border-bottom: 1px dashed #eee;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.txt-pane{
+			margin-right: .1435rem;
+		}
+		.main .section:nth-child(3) .txt-pane{
+			margin-left: .345rem;
+		}
+		.main .section:nth-child(5) .txt-pane{
+			margin-left: .345rem;
+		}
+		.main .section:nth-child(7) .txt-pane{
+			margin-left: .345rem;
+		}
+		.txt-pane h2{
+			font-size: .3rem;
+			line-height: .35rem;
+			padding-bottom: .15rem;
+		}
+		.txt-pane .sub-txt{
+			color: #f98919;
+			font-size: .22rem;
+			line-height: .26rem;
+			padding-bottom: .05rem;
+		}
+		.txt-pane .desc{
+			width:2.602rem;
+			font-size: .22rem;
+			line-height: .26rem;
+		}
+		.img-pane{
+			width:2.81rem;
+			height: 4.22rem;
+			background-size: 100%;
+			margin-left: .1435rem;
+		}
+		.main .section:nth-child(2) .img-pane{
+			background-image: url(img/1.png);
+		}
+		.main .section:nth-child(3) .img-pane{
+			background-image: url(img/2.png);
+			margin-right: .345rem;
+		}
+		.main .section:nth-child(4) .img-pane{
+			background-image: url(img/3.png);
+		}
+		.main .section:nth-child(5) .img-pane{
+			margin-right: .345rem;
+			background-image: url(img/4.png);
+		}
+		.main .section:nth-child(6) .img-pane{
+			background-image: url(img/55.png);
+		}
+		.main .section:nth-child(7) .img-pane{
+			margin-right: .345rem;
+			background-image: url(img/6.png);
+		}
+		.tip{
+			margin-top: .3rem;
+			margin-bottom: .3rem;
+			width:7.1rem;
+			background: white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.tip .content{
+			width:4.67rem;
+			height: .52rem;
+			margin-top: .4rem;
+			margin-left: .7rem;
+			margin-bottom: .51rem;
+			font-size: .22rem;
+			line-height: .26rem;
+		}
+		.code{
+			width:7.1rem;
+			background: white;
+			margin: 0 auto;
+			overflow: hidden;
+			height: 5.38rem;
+		}
+		.code img{
+			width:5rem;
+			height: 2.28rem;
+			margin-top: .62rem;
+			margin-left: 1.05rem;
+		}
+		.code p{
+			height: .27rem;
+			font-size: .24rem;
+			line-height: .27rem;
+			margin-top: .32rem;
+			color: #f98919;
+			text-align: center;
+		}
+	</style>
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="main-wrap">
+		<div class="main">
+			<div class="tag">抢票攻略</div>
+			<div class="section">
+				<div class="txt-pane">
+					<h2>第一步</h2>
+					<p class="sub-txt">关注微信：</p>
+					<p class="desc">扫码关注“滴滴巴士”微信公众号。</p>
+				</div>
+				<div class="img-pane"></div>
+			</div>
+			<div class="section">
+				<div class="img-pane"></div>
+				<div class="txt-pane">
+					<h2>第二步</h2>
+					<p class="sub-txt">选择路线：</p>
+					<p class="desc">点击“我要坐车”——“选择区域”——“中网”。</p>
+				</div>
+				
+			</div>
+			<div class="section">
+				<div class="txt-pane">
+					<h2>第三步</h2>
+					<p class="sub-txt">查看详情：</p>
+					<p class="desc">点击路线卡片，进入路线详情页查看具体上车地点；如对路线熟悉，也可直接预订车票</p>
+				</div>
+				<div class="img-pane"></div>
+			</div>
+			<div class="section">
+				<div class="img-pane"></div>
+
+				<div class="txt-pane">
+					<h2>第四步</h2>
+					<p class="sub-txt">下单购买：</p>
+					<p class="desc">点击“立即预订”，输入手机号，并填写验证码，选择预订路线的日期，点击“确定购买”并完成支付。</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="txt-pane">
+					<h2>第五步</h2>
+					<p class="sub-txt">提取车票:</p>
+					<p class="desc">开车前30分钟，点击公众号“我要坐车”，产品首页左下角会出现车票浮窗按钮，点击即可一键取票。</p>
+				</div>
+				<div class="img-pane"></div>
+			</div>
+			<div class="section">
+				<div class="img-pane"></div>
+				<div class="txt-pane">
+					<h2>第六步</h2>
+					<p class="sub-txt">验票上车:</p>
+					<p class="desc">在车票页点击“自助验票”，使车票进入闪烁状态，向司机出示，即可乘车。</p>
+				</div>
+			</div>
+		</div>
+		<div class="tip">
+			<div class="tag">温馨提示</div>
+			<div class="content">
+				<p>1. 请您提前到指定站点候车，以免耽误您乘车。</p>
+				<p>2. 请您上车时出示车票。</p>
+			</div>
+		</div>
+		<div class="code">
+			<div class="tag">扫码立刻抢票</div>
+			<img src="img/7.png">
+			<p>滴滴巴士 专车直达</p>
+		</div>
+	</div>
+</body>
+</html>
