@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>滴滴巴士</title>
+	<style>
+		body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,form,input,select,legend,fieldset,textarea,th,td{margin: 0;padding: 0;}
+		body{
+			color: #333;
+			font-family: "微软雅黑";
+		}
+		html{
+			background: #fafafa;
+			height: 13rem;
+		}
+		.nav{
+			height: .88rem;
+			display: flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+		.nav .user{
+			width:.86rem;
+			height: .47rem;
+			border-right: 1px solid #e5e5e5;
+			text-align: center;
+			line-height: 0;
+		}
+		.nav .more{
+			width:.86rem;
+			height: .47rem;
+			background: url(img/arrow.jpg) no-repeat .28rem .17rem;
+			background-size:.28rem .15rem;
+		}
+		.nav .user img{
+			width:.26rem;
+			height: .26rem;
+		}
+		.nav .menu{
+			width:5.77rem;
+			font-size: .26rem;
+			color: #8c8c8c;
+			display: flex;
+			justify-content:space-between;
+		}
+		.nav .menu div{
+			height: .58rem;
+			width: 1.16rem;
+			border-radius: .25rem;
+			line-height: .58rem;
+			text-align: center;
+			border:1px solid #fafafa;
+		}
+		.nav .menu .active{
+			color: #ff8a02;
+			border-color: #ececec;
+		}
+		.welcome{
+			text-align: center;
+			font-size: .38rem;
+			color: #666;
+			overflow: hidden;
+		}
+		.welcome p{
+			margin-top: .96rem;
+			margin-bottom: .8rem;
+		}
+		
+		.welcome input{
+			width:5.86rem;
+			height: .88rem;
+			border:.02rem solid #e5e5e5;
+			border-radius: .06rem;
+			padding-left:.59rem;
+			color: #fc8900;
+			font-size: .25rem;
+			background: url(img/search.png) white no-repeat .2rem .34rem;
+			background-size:.2rem .2rem;
+		}
+		.main{
+			width:6.06rem;
+			border:.02rem solid #e5e5e5;
+			border-radius: .06rem;
+			padding: 0 .19rem;
+			background: #fff;
+			margin: 0 auto;
+			margin-top: .4rem;
+		}
+		.main .section{
+			height: 1.18rem;
+			border-bottom: 1px solid #eee;
+			display: flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+		.main .section h3{
+			font-size: .3rem;
+			margin-bottom: .1rem;
+		}
+		.main .section .wait{
+			font-weight: normal;
+			text-align: right;
+		}
+		.main .section h3 span{
+			font-size: .17rem;
+			color: #adadad;
+			font-weight: normal;
+			margin-left: .3rem;
+		}
+		.main .section p{
+			font-size: .22rem;
+			color: #adadad;
+		}
+		.main .section h4{
+			font-size: .27rem;
+		}
+		.main .section .big{
+			font-size: .34rem;
+			text-align: right;
+			background: url(img/signal.gif) no-repeat 1rem .1rem;
+			background-size:.14rem;
+		}
+		.main .section .big i{
+			font-style: normal;
+			font-size: .2rem;
+			font-weight: normal;
+		}
+		.service{
+			width:6.06rem;
+			border:.02rem solid #e5e5e5;
+			border-radius: .06rem;
+			padding: 0 .19rem;
+			background: #fff;
+			margin: 0 auto;
+			margin-top: .2rem;
+			display: flex;
+			height: 1.2rem;
+			align-items:center;
+		}
+		.service div {
+			width:50%;
+		}
+
+		.service h3{
+			font-size: .3rem;
+			margin-bottom: .1rem;
+			font-weight: normal;
+			padding-left: .4rem;
+			background: url(img/diamond.png) no-repeat 0 .03rem;
+			background-size:.32rem;
+		}
+		.service div:first-child h3{
+			background-image: url(img/train.png);
+		}
+		.service div:last-child{
+			padding-left: .2rem;
+			border-left: 1px solid #eee;
+		}
+		.service p{
+			font-size: .22rem;
+			color: #adadad;
+		}
+		.ad{
+			width: 6.47rem;
+			background: #e5e5e5;
+			height: 1.3rem;
+			overflow: hidden;
+			margin: 0 auto;
+			margin-top: .2rem;
+		}
+		.ad p{
+			text-align: center;
+			color: #fff;
+			font-size: .24rem;
+			margin-top: .75rem;
+		}
+		
+	</style>
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<div class="user"><img src="img/man.jpg" alt=""></div>
+		<div class="menu">
+			<div>出租车</div>
+			<div class="active">公交</div>
+			<div>快车</div>
+			<div>代驾</div>
+			<div>顺风车</div>
+		</div>
+		<div class="more"></div>
+	</div>
+	<div class="welcome">
+		<p>欢迎使用滴滴公交</p>
+		<input type="text" value="查公交、搜地点">
+	</div>
+	<div class="main">
+		<div class="section">
+			<div>
+				<h3>班车<span>08:00 - 09:45</span></h3>
+				<p>中关村软件园二期 - 昌平东关平东</p>
+			</div>
+			<div>
+				<h4>5元</h4>
+			</div>
+		</div>
+		<div class="section">
+			<div>
+				<h3>19路</h3>
+				<p>开往生命科学院西</p>
+			</div>
+			<div>
+				<h3 class="big">1<i>分钟</i></h3>
+				<p>到达 和平里路口北</p>
+			</div>
+		</div>
+		<div class="section">
+			<div>
+				<h3>34路</h3>
+				<p>开往生命科学院西</p>
+			</div>
+			<div>
+				<h3 class="big">3<i>分钟</i></h3>
+				<p>到达 和平里路口北</p>
+			</div>
+		</div>
+		<div class="section">
+			<div>
+				<h3>442路</h3>
+				<p>开往莱户营桥东</p>
+			</div>
+			<div>
+				<h3 class="wait">等待发车</h3>
+				<p>到达 和平里路口北</p>
+			</div>
+		</div>
+	</div>
+	<div class="service">
+		<div>
+			<h3>班车</h3>
+			<p>专座直达 为你而开</p>
+		</div>
+		<div>
+			<h3>包车</h3>
+			<p>轻松包车 随心随行</p>
+		</div>
+	</div>
+	<div class="ad">
+		<p>运营位</p>
+	</div>
+	
+</body>
+</html>
